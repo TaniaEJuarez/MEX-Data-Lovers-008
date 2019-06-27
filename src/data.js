@@ -2,8 +2,7 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const example = () => {
-    return 'example';
+  return 'example';
 };
-window.example = example;
 
-const root = document.getElementById('champions')
+window.example = example;

@@ -196,63 +196,65 @@ header ol {
 
 /*Estilos de Game Basics*/
 
-#game-basics{
+#game-basics {
     font-family: adobe-garamond-pro, serif;
     font-style: normal;
-    
     border: 5px solid gray;
-    background-image:url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
+    background-image: url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
     /*opacity: 0.5;*/
     height: 100%;
-    background-repeat: no-repeat; /*solo una imagen*/
-    background-position: center; /*posicion de la imagen de fondo*/
+    background-repeat: no-repeat;
+    /*solo una imagen*/
+    background-position: center;
+    /*posicion de la imagen de fondo*/
     background-size: cover;
-    background-attachment: fixed; /*scroll. La imagen se queda fija*/
+    background-attachment: fixed;
+    /*scroll. La imagen se queda fija*/
     padding: 2rem;
-    }
+}
 
-    ul{
-        font-family: adobe-garamond-pro, serif;
-        font-weight: bold;
-       /* background: #cce5ff;*/
-        margin: 5px;
-        padding: 8px 16px;
-        border-bottom: 1px solid #ddd;
-    }
+ul {
+    font-family: adobe-garamond-pro, serif;
+    font-weight: bold;
+    /* background: #cce5ff;*/
+    margin: 5px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
 
-    li{
-        color:#BFA004  
-    }
+li {
+    color: #BFA004
+}
 
-    pre{
-        display: block;
-        margin: 1em 0;
-        font-family: adobe-garamond-pro, serif;
-        white-space: pre-wrap;
+pre {
+    display: block;
+    margin: 1em 0;
+    font-family: adobe-garamond-pro, serif;
+    white-space: pre-wrap;
+}
 
-    }
+h2 {
+    font-size: 40px;
+    color: gold
+}
 
-    h2{
-        font-size: 40px;
-        color: gold
-    }
+button {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
 
-    button {
-        text-align: center;
-        display: inline-block;
-        cursor: pointer;
-     }
+.content-basics {
+    background-color: rgba(26, 46, 221, 0.5);
+    font-size: 99%;
+    font-weight: bold;
+    font-weight: 900;
+}
 
-     .content-basics {
-        background-color:rgba(26, 46, 221, 0.5);
-        font-size: 99%;
-        font-weight: bold;
-        font-weight: 900;
-     }
+hr.content-basics {
+    border: 3px solid gold;
+}
 
-     hr.content-basics {
-        border: 3px solid gold;
-      }
 
 /* Estilos seccion Champions*/
 

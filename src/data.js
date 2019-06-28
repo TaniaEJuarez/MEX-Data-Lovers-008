@@ -4,6 +4,4 @@
 const example = () => {
     return 'example';
 };
-window.example = example;
-
-const root = document.getElementById('champions')
+//window.data = //

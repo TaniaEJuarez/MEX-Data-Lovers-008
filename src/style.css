@@ -1,18 +1,243 @@
-#game-basics{
+/*limpiar estilos por defecto*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*Estilos Menu Navegacion*/
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header {
+    background-color: #1b2127;
+    color: #BFA004;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+    text-align: center !important;
+}
+
+.header a {
+    color: #BFA004;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.header ol li:hover {
+    color: gray;
+    background-color: #323436;
+}
+
+.menu {
+    display: flex;
+    height: inherit;
+}
+
+
+/*Estilos de  section welcome*/
+
+.section-welcome {
+    width: 100%;
+    height: 600px;
+    background-image: url(league-of-legends-intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.article-welcome {
+    width: 100%;
+    height: 600px;
+    background-color: #04254698;
+}
+
+.w-header {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-content {
+    color: white;
+    font-size: bold;
+    text-align: center;
+}
+
+.button-meet-c {
+    background-color: 136, 127, 4;
+    color: #1D0259
+}
+
+
+/*Estilos de Modal*/
+
+
+/*Estilo del flexbox modal*/
+
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Estilos de boton del Modal:*/
+
+.b-m-button {
+    background-color: none;
+    align-items: center;
+    display: inline-block;
+    padding: 5 px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.b-m-button:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+/*Estilos del Contenido del Modal*/
+
+.m-header,
+.m-footer {
+    text-align: center;
+    padding: 8px 16px;
+    background-color: rgb(136, 127, 4);
+    color: rgb(241, 246, 248);
+}
+
+.m-body {
+    text-align: center;
+    padding: 20 px 16px;
+}
+
+.m-box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 83, 6, 0.747);
+    ALIGN-ITEMS: CENTER;
+    JUSTIFY-CONTENT: CENTER;
+}
+
+.m-content {
+    position: relative;
+    background-color: rgba(6, 43, 92, 0.849);
+    color: white;
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+
+/*Animación del Modal*/
+
+@keyframes modal {
+    from {
+        top: -330px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close {
+    color: rgb(243, 243, 230);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: rgb(6, 7, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Estilos de Game Basics*/
+
+#game-basics {
     border: 5px solid gray;
-    background-image:url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
-    background-repeat: no-repeat; /*solo una imagen*/
-    background-position: center top; /*posicion de la imagen de fondo*/
+    background-image: url('https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx');
+    background-repeat: no-repeat;
+    /*solo una imagen*/
+    background-position: center top;
+    /*posicion de la imagen de fondo*/
     background-size: cover;
     /*margin-top: 0px; /*margen del texto en relacion a la parte de arriba*/
-    background-attachment: fixed; /*scroll. La imagen se queda fija*/
-    }
+    background-attachment: fixed;
+    /*scroll. La imagen se queda fija*/
+}
 
-    ul li {
-        background: #cce5ff;
-        margin: 5px;
-        padding: 8px 16px;
-        border-bottom: 1px solid #ddd;
-    }
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
 
-    
+
+/* Estilos seccion Champions*/
+
+#champions {
+    width: 100%;
+    height: 100%100%;
+    background-color: whitesmoke;
+}
+
+.main-cards {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    border: 1px solid black;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba (0, 0, 0, 0, 2);
+}

@@ -1,0 +1,44 @@
+/* Color Theme Swatches in Hex */
+.Champ-LOL-1-hex { color: #4F528C; }
+.Champ-LOL-2-hex { color: #378C2A; }
+.Champ-LOL-3-hex { color: #315915; }
+.Champ-LOL-4-hex { color: #8C2626; }
+.Champ-LOL-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Champ-LOL-1-rgba { color: rgba(79, 82, 140, 1); }
+.Champ-LOL-2-rgba { color: rgba(55, 140, 42, 1); }
+.Champ-LOL-3-rgba { color: rgba(49, 89, 21, 1); }
+.Champ-LOL-4-rgba { color: rgba(140, 38, 38, 1); }
+.Champ-LOL-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Champ-LOL-1-hsla { color: hsla(237, 27, 42, 1); }
+.Champ-LOL-2-hsla { color: hsla(112, 53, 35, 1); }
+.Champ-LOL-3-hsla { color: hsla(95, 61, 21, 1); }
+.Champ-LOL-4-hsla { color: hsla(0, 57, 34, 1); }
+.Champ-LOL-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+
+
+/* Color Theme Swatches in Hex */
+.League-of-Legends-700x500-1-hex { color: #3703A6; }
+.League-of-Legends-700x500-2-hex { color: #1D0259; }
+.League-of-Legends-700x500-3-hex { color: #BFA004; }
+.League-of-Legends-700x500-4-hex { color: #D97904; }
+.League-of-Legends-700x500-5-hex { color: #BF0404; }
+
+/* Color Theme Swatches in RGBA */
+.League-of-Legends-700x500-1-rgba { color: rgba(55, 3, 166, 1); }
+.League-of-Legends-700x500-2-rgba { color: rgba(29, 2, 89, 1); }
+.League-of-Legends-700x500-3-rgba { color: rgba(191, 160, 4, 1); }
+.League-of-Legends-700x500-4-rgba { color: rgba(217, 121, 4, 1); }
+.League-of-Legends-700x500-5-rgba { color: rgba(191, 4, 4, 1); }
+
+/* Color Theme Swatches in HSLA */
+.League-of-Legends-700x500-1-hsla { color: hsla(259, 96, 33, 1); }
+.League-of-Legends-700x500-2-hsla { color: hsla(258, 95, 17, 1); }
+.League-of-Legends-700x500-3-hsla { color: hsla(50, 95, 38, 1); }
+.League-of-Legends-700x500-4-hsla { color: hsla(32, 96, 43, 1); }
+.League-of-Legends-700x500-5-hsla { color: hsla(0, 95, 38, 1); } 

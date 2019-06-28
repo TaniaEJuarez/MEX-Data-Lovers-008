@@ -2,6 +2,6 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 const example = () => {
-    return 'example';
+  return 'example';
 };
 //window.data = //

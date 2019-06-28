@@ -5,5 +5,3 @@ const example = () => {
     return 'example';
 };
 //window.data = //
-
-const root = document.getElementById('champions')

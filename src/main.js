@@ -7,7 +7,7 @@ const closeModal = document.getElementById('close-modal');
 //evento para abrir modal//
 openModal.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
 });
 //evento para cerrar modal//
 closeModal.addEventListener('click', (e) => {
@@ -28,7 +28,7 @@ const buttonMeetChampions = document.getElementById('button-meet-champions');
 const buttonGBStart = document.getElementById('button-gb-start');
 const buttonNavWelcome = document.getElementById('button-nav-welcome');
 const buttonNavGBasics = document.getElementById('button-nav-gbasics');
-const buttonNavChampions = document.getElementById('button-nav-gbasics');
+const buttonNavChampions = document.getElementById('button-nav-champions');
 
 //Variables para mostrar secciones//
 const sectionGameBasics = document.getElementById('game-basics');
@@ -81,8 +81,10 @@ for (const key in data) {
         <p>Roles: ${element.tags}</p> <br>
         <p>Armadura: ${element.stats.armor}</p> <br>
         <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
-        <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p>`
-        console.log(cards);
+        <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p>
+        <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>`
+            // console.log(typeof cards);//
+        const root = document.getElementById('section-champions')
 
     }
 }

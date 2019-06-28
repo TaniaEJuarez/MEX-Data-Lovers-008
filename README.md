@@ -14,18 +14,50 @@ A través de las partidas, los jugadores también obtienen recompensas que se ap
 
 Nos dimos a la tarea de investigar mas acerca de este videojuego en tendencia, ver las modalidades y cómo es que impacta entre la comunidad gamers.
 
-## Research
+
+## Research 🕵️
 
 En nuestros desing research, nos dimos a la tarea de investigar el perfil de los usuarios de LoL, estadisticas, datos sociodemograficos, asi como comportamientos, necesidades y preferencias que tienen. 
 
-### Benchmarking
+![research](img/research.jpg)
+
+
+### Benchmarking ✔️
 
 Las principales aplicaciones utilizadas, se muestran en la siguiente tabla:
-
 ![tabla-benchmarking](img/benchmarking.jpg)
 
-### Insights
 
+
+### Investigación de Usuario y su comportamiento 🔎
+![caracteristicas-usuario](img/caracteristicas-usuario.jpg)
+
+
+
+
+### Insights 📢
+
+Al entender y detectar a los jugadores de esta plataforma, entendimos que:
+
+•	Presentan problemas al acceder a ciertas aplicaciones.
+•	Presentan problemas de conexión en algunos dispositivos.
+•	Tanto los usuarios expertos como los iniciadores, necesitan entender y conocer los lineamientos generales.
+•	Necesitan conocer cada campeón.
+•	Requieren poder identificar los campeones que frecuentemente son utilizados.
+•	Bases de datos de objetos y campeones
+•	Interfaz amigable y facil de usar.
+
+
+
+### Necesidades 😧
+
+
+En general, los usuarios presentan las siguientes necesidades:
+
+• Entender conceptos básicos y tips
+• Entender el objetivo del juego		
+• Conocer las mecánicas mas básicas
+• Buscar una forma de mejorar
 
 
 

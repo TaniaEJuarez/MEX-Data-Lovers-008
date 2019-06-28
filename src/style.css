@@ -53,7 +53,65 @@
 /*Estilos del Contenido del Modal*/
 
 .m-box {
-    k
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 83, 6, 0.747);
+}
+
+.m-content {
+    position: relative;
+    background-color: rgba(6, 43, 92, 0.849);
+    color: white;
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+
+/*Animación del Modal*/
+
+@keyframes modal {
+    from {
+        top: -330px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close {
+    color: rgb(243, 243, 230);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: rgb(6, 7, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.m-header,
+.m-footer {
+    text-align: center;
+    padding: 8px 16px;
+    background-color: rgb(136, 127, 4);
+    color: rgb(241, 246, 248);
+}
+
+.m-body {
+    text-align: center;
+    padding: 20 px 16px;
 }
 
 

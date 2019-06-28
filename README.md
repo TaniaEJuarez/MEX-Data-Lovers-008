@@ -1,3 +1,36 @@
+# Glance at LoL
+
+Es un sitio que nos presenta una guía básica acerca de los principales elementos que componen el videojuego de League of Leyends.
+
+Este videojuego es del género multijugador de arena de batalla en línea (MOBA) y deporte electrónico, desarrollado por Riot Games para Microsoft Windows y OS X. 
+
+Cuenta con más de 100 millones de usuarios alrededor del mundo y motivo de competencias multitudinarias mundiales que se disputa todos los años.
+
+Los campeones comienzan cada partida con un bajo nivel y luego ganan experiencia en el transcurso de la partida para alcanzar un nivel máximo de 18. Ganar niveles de experiencia en las partidas permite a los jugadores desbloquear las habilidades especiales de su campeón y aumentarlas de varias maneras únicas para cada personaje.
+
+El juego consta de 3 modos actuales de juego en ejecución: La Grieta del Invocador, El Bosque Retorcido y El Abismo de los Lamentos. Los jugadores compiten en partidas, que duran entre 20 y 60 minutos en promedio. En cada modo de juego, los equipos trabajan juntos para lograr una condición de victoria, normalmente destruyendo la estructura central (llamado Nexo) en la base del equipo enemigo después de pasar por alto una línea de estructuras defensivas llamadas Torretas. En todos los modos de juego, los jugadores controlan personajes llamados «campeones», elegidos o asignados en cada partida, que tienen un conjunto de habilidades únicas, con los cuales jugarán toda la partida hasta su conclusión.
+
+A través de las partidas, los jugadores también obtienen recompensas que se aplican a su cuenta. Las cuentas de los jugadores comienzan en el nivel uno y progresan mediante la cantidad de partidas jugadas. El nivel de jugador es independiente del nivel de personaje.
+
+Nos dimos a la tarea de investigar mas acerca de este videojuego en tendencia, ver las modalidades y cómo es que impacta entre la comunidad gamers.
+
+## Research
+
+En nuestros desing research, nos dimos a la tarea de investigar el perfil de los usuarios de LoL, estadisticas, datos sociodemograficos, asi como comportamientos, necesidades y preferencias que tienen. 
+
+### Benchmarking
+
+Las principales aplicaciones utilizadas, se muestran en la siguiente tabla:
+
+![tabla-benchmarking](img/benchmarking.jpg)
+
+### Insights
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice

@@ -26,17 +26,63 @@ window.addEventListener('click', (e) => {
 //creando variables de botones//
 const buttonMeetChampions = document.getElementById('button-meet-champions');
 const buttonGBStart = document.getElementById('button-gb-start');
+const buttonNavWelcome = document.getElementById('button-nav-welcome');
+const buttonNavGBasics = document.getElementById('button-nav-gbasics');
+const buttonNavChampions = document.getElementById('button-nav-gbasics');
+
 //Variables para mostrar secciones//
-const showSectionGameBasics = document.getElementById('game-basics');
-const showSectionChampions = document.getElementById('champions');
-const hideSectionWelcome = document.getElementById('welcome');
+const sectionGameBasics = document.getElementById('game-basics');
+const sectionChampions = document.getElementById('champions');
+const sectionWelcome = document.getElementById('welcome');
 
 //Crear funciones que manipulen las secciones//
-buttonMeetChampions.addEventListener('click', (e) => {
-    hideSectionWelcome.classList.add('hide');
-    showSectionChampions.classList.remove('hide');
+
+buttonNavWelcome.addEventListener('click', (e) => {
+    sectionWelcome.classList.remove('hide');
+    sectionGameBasics.classList.add('hide');
+    sectionChampions.classList.add('hide');
+
 });
 
-buttonGBStart.addEventListener
+buttonNavGBasics.addEventListener('click', (e) => {
+    sectionWelcome.classList.add('hide');
+    sectionChampions.classList.add('hide');
+    sectionGameBasics.classList.remove('hide');
+});
 
-//const buttonMeetChampions = document.getElementById();//
+buttonNavChampions.addEventListener('click', (e) => {
+    sectionChampions.classList.remove('hide');
+    sectionGameBasics.classList.add('hide');
+    sectionWelcome.classList.add('hide');
+});
+
+
+buttonMeetChampions.addEventListener('click', (e) => {
+    sectionWelcome.classList.add('hide');
+    sectionChampions.classList.remove('hide');
+});
+
+buttonGBStart.addEventListener('click', (e) => {
+    sectionGameBasics.classList.add('hide');
+    sectionChampions.classList.remove('hide');
+});
+
+//llamar a la data//
+let data = LOL.data;
+
+
+
+for (const key in data) {
+    if (data.hasOwnProperty(key)) {
+        const element = data[key];
+        let cards = `<p>${element.name}</p> <br>
+        <p> <img src="${element.img}"></p> <br>
+        <p>${element.title}</p> <br>
+        <p>Roles: ${element.tags}</p> <br>
+        <p>Armadura: ${element.stats.armor}</p> <br>
+        <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
+        <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p>`
+        console.log(cards);
+
+    }
+}

@@ -6,16 +6,48 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
 
-/*Estilos de  header*/
 
-.section-welcome-header {
-    background-color: rgb(32, 32, 92);
+/*Estilos Menu Navegacion*/
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+/*Estilos de  section welcome*/
+
+.section-welcome {
+    width: 100%;
+    height: 600px;
+    background-image: url(league-of-legends-intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .w-header {
     padding: 50px;
     text-align: center;
+    color: white;
+}
+
+.welcome-content {
+    color: white;
+    font-size: bold;
+    text-align: center;
+}
+
+.button-meet-c {
+    background-color: 136, 127, 4;
+    color: #1D0259
 }
 
 
@@ -51,6 +83,19 @@
 
 
 /*Estilos del Contenido del Modal*/
+
+.m-header,
+.m-footer {
+    text-align: center;
+    padding: 8px 16px;
+    background-color: rgb(136, 127, 4);
+    color: rgb(241, 246, 248);
+}
+
+.m-body {
+    text-align: center;
+    padding: 20 px 16px;
+}
 
 .m-box {
     display: none;
@@ -101,19 +146,6 @@
     cursor: pointer;
 }
 
-.m-header,
-.m-footer {
-    text-align: center;
-    padding: 8px 16px;
-    background-color: rgb(136, 127, 4);
-    color: rgb(241, 246, 248);
-}
-
-.m-body {
-    text-align: center;
-    padding: 20 px 16px;
-}
-
 
 /*Estilos de Game Basics*/
 
@@ -138,4 +170,14 @@ ul li {
 }
 
 
-/**/
+/* Estilos seccion Champions*/
+
+#champions {
+    width: 100%;
+    height: 600px;
+    background-color: Black;
+}
+
+#text-champions {
+    color: #ddd;
+}

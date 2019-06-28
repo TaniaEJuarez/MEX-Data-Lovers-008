@@ -22,3 +22,19 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+//creando variables de botones//
+const buttonMeetChampions = document.getElementById('button-meet-champions');
+const buttonGBStart = document.getElementById('button-gb-start');
+//Variables para mostrar secciones//
+const showSectionGameBasics = document.getElementById('game-basics');
+const showSectionChampions = document.getElementById('champions');
+const hideSectionWelcome = document.getElementById('welcome');
+
+//Crear funcion que manipule las secciones//
+buttonMeetChampions.addEventListener('click', (e) => {
+    hideSectionWelcome.classList.add('hide');
+    showSectionChampions.classList.remove('hide');
+});
+
+//const buttonMeetChampions = document.getElementById();//

@@ -10,12 +10,20 @@
 <body>
 
     <header>
-        <nav>
-
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a href="#" id="button-nav-welcome">Home</a>
+                </li>
+                <li>
+                    <a href="#" id="button-nav-gbasics">Game Basics</a>
+                </li>
+                <a href="#" id="button-nav-champions">Champions</a>
+            </ol>
         </nav>
     </header>
 
-    <section id="welcome">
+    <section id="welcome" class="section-welcome">
         <article>
             <header class="section-welcome-header">
                 <div id="welcome-header" class="w-header">
@@ -47,17 +55,15 @@
                 </div>
             </header>
             <main>
-                <div id="principal-content">
+                <div id="principal-content" class="welcome-content">
                     <div id="engagement">
                         <h2>¿Quieres jugar LoL como todo un Pro-Gamer?</h2>
                         <p>¿Dedicas buena parte de tu tiempo viendo gameplays, disfrutas ver jugar a tus amigos y en el fondo, quieres lanzarte a la jungla, pero no sabes por donde empezar?</p>
                     </div>
                     <div id="info-basic">
                         <p>¡Por fin! Una herramienta que te ayude a obtener una mirada rápida al universo LoL, empezando por sus campeones que te ayuda a tomar las mejores decisiones a la hora de jugar.</p>
+                        <button id="button-meet-champions" class="button-meet-c">Conocer a los Campeones</button>
                     </div>
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
                 </div>
             </main>
 
@@ -66,26 +72,8 @@
         </article>
     </section>
 
-    <section id="game-basics">
-        <article>
 
-        </article>
-
-    </section>
-
-    <section id="champions">
-        <article>
-        </article>
-    </section>
-
-
-    <section id="instructions">
-        <article>
-
-        </article>
-    </section>
-
-    <section id="game-basics">
+    <section id="game-basics" class="hide">
         <article>
             <header>
                 <h2>Reglas Básicas</h2>
@@ -143,15 +131,20 @@
             </ul>
             <br>
             <br>
-            <button type="button">Comenzar</button>
+            <button id="button-gb-start">Comenzar</button>
         </article>
     </section>
 
-    <section id="champions">
+    <section id="champions" class="hide">
         <article>
+            <p id="text-champions">Esta es la seccion champions</p>
 
         </article>
     </section>
+
+    <footer>
+        <p>Laboratoria</p>
+    </footer>
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

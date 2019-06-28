@@ -37,20 +37,21 @@ const sectionWelcome = document.getElementById('welcome');
 
 //Crear funciones que manipulen las secciones//
 
-buttonNavWelcome.addEventListener('click', (e) => {
+buttonNavWelcome.addEventListener('click', () => {
     sectionWelcome.classList.remove('hide');
     sectionGameBasics.classList.add('hide');
     sectionChampions.classList.add('hide');
 
 });
 
-buttonNavGBasics.addEventListener('click', (e) => {
+buttonNavGBasics.addEventListener('click', () => {
     sectionWelcome.classList.add('hide');
     sectionChampions.classList.add('hide');
     sectionGameBasics.classList.remove('hide');
+    sectionGameBasics.style.display = block;
 });
 
-buttonNavChampions.addEventListener('click', (e) => {
+buttonNavChampions.addEventListener('click', () => {
     sectionChampions.classList.remove('hide');
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');

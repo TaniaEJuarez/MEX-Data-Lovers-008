@@ -21,6 +21,45 @@ ul {
     display: flex;
 }
 
+.header {
+    background-color: #1b2127;
+    color: #BFA004;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+    text-align: center !important;
+}
+
+.header a {
+    color: #BFA004;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.header ol li:hover {
+    color: gray;
+    background-color: #323436;
+}
+
+.menu {
+    display: flex;
+    height: inherit;
+}
+
 
 /*Estilos de  section welcome*/
 
@@ -31,6 +70,12 @@ ul {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.article-welcome {
+    width: 100%;
+    height: 600px;
+    background-color: #04254698;
 }
 
 .w-header {

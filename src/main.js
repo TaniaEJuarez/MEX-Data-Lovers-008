@@ -31,10 +31,12 @@ const showSectionGameBasics = document.getElementById('game-basics');
 const showSectionChampions = document.getElementById('champions');
 const hideSectionWelcome = document.getElementById('welcome');
 
-//Crear funcion que manipule las secciones//
+//Crear funciones que manipulen las secciones//
 buttonMeetChampions.addEventListener('click', (e) => {
     hideSectionWelcome.classList.add('hide');
     showSectionChampions.classList.remove('hide');
 });
+
+buttonGBStart.addEventListener
 
 //const buttonMeetChampions = document.getElementById();//

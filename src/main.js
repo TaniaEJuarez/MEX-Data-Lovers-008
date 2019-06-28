@@ -82,9 +82,10 @@ for (const key in data) {
         <p>Armadura: ${element.stats.armor}</p> <br>
         <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
         <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p>
-        <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>`
-            // console.log(typeof cards);//
-        const root = document.getElementById('section-champions')
+        <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>`;
+        // console.log(typeof cards);//
+        const root = document.getElementById('cards-champions');
+        root.insertAdjacentHTML('afterbegin', cards);
 
     }
 }

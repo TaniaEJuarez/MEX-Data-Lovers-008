@@ -280,7 +280,7 @@ hr.content-basics {
     height: 100%;
     margin: auto;
     display: inherit;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
 }
@@ -289,9 +289,12 @@ hr.content-basics {
     box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
     transition: 0.3s;
     padding: 2px 16px;
+    margin: 10px;
+    width: 25%;
+    height: 200px;
     border: 1px solid black;
-    display: inherit;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: space-between;
     justify-items: space-between;
 }

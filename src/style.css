@@ -258,9 +258,10 @@ hr.content-basics {
 
 /* Estilos seccion Champions*/
 
-#champions {
+.section-champions {
     width: 100%;
-    height: 100%100%;
+    height: 100%;
+    display: flex;
     background-color: whitesmoke;
 }
 
@@ -268,13 +269,34 @@ hr.content-basics {
     width: 80%;
     height: 80%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
+}
+
+.box-cards {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: inherit;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
     transition: 0.3s;
     padding: 2px 16px;
+    margin: 10px;
+    width: 25%;
+    height: 200px;
     border: 1px solid black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
 }
 
 .card:hover {

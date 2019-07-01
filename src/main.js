@@ -60,11 +60,13 @@ buttonNavChampions.addEventListener('click', () => {
 
 buttonMeetChampions.addEventListener('click', (e) => {
     sectionWelcome.classList.add('hide');
+    sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
 });
 
 buttonGBStart.addEventListener('click', (e) => {
     sectionGameBasics.classList.add('hide');
+    sectionWelcome.classList.add('hide');
     sectionChampions.classList.remove('hide');
 });
 
@@ -76,16 +78,18 @@ let data = LOL.data;
 for (const key in data) {
     if (data.hasOwnProperty(key)) {
         const element = data[key];
-        let cards = `<p>${element.name}</p> <br>
+        let cards = `<div id="cards-champions" class="card">
+        <p>${element.name}</p> <br>
         <p> <img src="${element.img}"></p> <br>
         <p>${element.title}</p> <br>
         <p>Roles: ${element.tags}</p> <br>
         <p>Armadura: ${element.stats.armor}</p> <br>
         <p>Daño de Ataque: ${element.stats.attackdamage}</p> <br>
-        <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p>
-        <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>`;
+        <p>Velocidad de Ataque: ${element.stats.attackspeedoffset}</p> <br>
+        <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
+        </div>`;
         // console.log(typeof cards);//
-        const root = document.getElementById('cards-champions');
+        const root = document.getElementById('box-cards');
         root.insertAdjacentHTML('afterbegin', cards);
 
     }

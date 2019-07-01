@@ -68,12 +68,19 @@ Decidimos realizar una encuesta a los usuarios de LoL que nos permitiera saber m
 ![Encuesta](img/encuesta.png)
 
 • ¿Has jugado/visto League Of Legends en los últimos 3 meses?
+
 • ¿Cómo te identificas?
+
 • ¿Qué edad tienes?
+
 • ¿Cuántas veces a la semana lo juegas?
+
 • ¿Qué habilidades te resultan más importantes al conocer a un campeón?
+
 • ¿Qué roles te resultan más interesantes?
+
 • ¿Qué consideras mas importante al momento de elegir/comparar a un campeón?
+
 • ¿Qué posiciones ocupas al jugar?
 
 _Resultados_
@@ -119,6 +126,11 @@ Como primer boceto, nos planteamos el siguiente:
 ## Autores 👓
 Leda Huerta /
 Tania E Juarez
+
+
+
+## Expresiones de Gratitud
+
 
 
 

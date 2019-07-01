@@ -3,6 +3,12 @@ const modal = document.getElementById('modal-box');
 const flex = document.getElementById('modal-flex');
 const openModal = document.getElementById('modal-help');
 const closeModal = document.getElementById('close-modal');
+const filtrar = document.getElementById('filtrar')
+let data = LOL.data;
+const root = document.getElementById('box-cards');
+
+const newData = [];
+
 
 //evento para abrir modal//
 openModal.addEventListener('click', (e) => {
@@ -55,6 +61,7 @@ buttonNavChampions.addEventListener('click', () => {
     sectionChampions.classList.remove('hide');
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
+    printDataObject(data)
 });
 
 
@@ -62,6 +69,7 @@ buttonMeetChampions.addEventListener('click', (e) => {
     sectionWelcome.classList.add('hide');
     sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
+    printDataObject(data)
 });
 
 buttonGBStart.addEventListener('click', (e) => {
@@ -75,9 +83,14 @@ let data = LOL.data;
 let cards = '';
 
 
+const printDataObject = (data) => {
+    
 for (const key in data) {
     if (data.hasOwnProperty(key)) {
         const element = data[key];
+
+        newData.push(element)
+        let cards = `<div id="cards-champions" class="card">
         cards = `<div id="cards-champions" class="card">
         <div id="card-img" class="card-img"> <p> <img src="${element.img}"></p> </div> <br>
         <p>${element.name}</p> <br>
@@ -89,11 +102,26 @@ for (const key in data) {
         <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
         </div>`;
         // console.log(typeof cards);//
-        const root = document.getElementById('box-cards');
         root.insertAdjacentHTML('afterbegin', cards);
     }
 }
 
+
+
+}
+
+
+
+
+filtrar.addEventListener('click', () => {
+    const miiNombre = newData.filter(index  => index.name == 'Zed')
+    // printDataObject(miiNombre)
+    let data1 = {data: miiNombre[0]}
+    root.innerHTML = '';
+printDataObject(data1)
+})
+
 //document.getElementById('filter-ability').insertAdjacentHTML('afterbegin',) = window.data.filter;//
 
 //console.log(data);//
+

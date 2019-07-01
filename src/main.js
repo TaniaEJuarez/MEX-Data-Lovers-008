@@ -72,15 +72,15 @@ buttonGBStart.addEventListener('click', (e) => {
 
 //llamar a la data//
 let data = LOL.data;
-
+let cards = '';
 
 
 for (const key in data) {
     if (data.hasOwnProperty(key)) {
         const element = data[key];
-        let cards = `<div id="cards-champions" class="card">
+        cards = `<div id="cards-champions" class="card">
+        <div id="card-img" class="card-img"> <p> <img src="${element.img}"></p> </div> <br>
         <p>${element.name}</p> <br>
-        <p> <img src="${element.img}"></p> <br>
         <p>${element.title}</p> <br>
         <p>Roles: ${element.tags}</p> <br>
         <p>Armadura: ${element.stats.armor}</p> <br>
@@ -91,6 +91,9 @@ for (const key in data) {
         // console.log(typeof cards);//
         const root = document.getElementById('box-cards');
         root.insertAdjacentHTML('afterbegin', cards);
-
     }
 }
+
+//document.getElementById('filter-ability').insertAdjacentHTML('afterbegin',) = window.data.filter;//
+
+//console.log(data);//

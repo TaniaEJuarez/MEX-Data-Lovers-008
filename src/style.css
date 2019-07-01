@@ -271,6 +271,8 @@ hr.content-basics {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: space-between;
+    justify-items: space-between;
 }
 
 .box-cards {
@@ -278,7 +280,9 @@ hr.content-basics {
     height: 100%;
     margin: auto;
     display: inherit;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-items: space-between;
+    justify-items: space-between;
 }
 
 .card {
@@ -287,7 +291,9 @@ hr.content-basics {
     padding: 2px 16px;
     border: 1px solid black;
     display: inherit;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-items: space-between;
+    justify-items: space-between;
 }
 
 .card:hover {

@@ -60,11 +60,13 @@ buttonNavChampions.addEventListener('click', () => {
 
 buttonMeetChampions.addEventListener('click', (e) => {
     sectionWelcome.classList.add('hide');
+    sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
 });
 
 buttonGBStart.addEventListener('click', (e) => {
     sectionGameBasics.classList.add('hide');
+    sectionWelcome.classList.add('hide');
     sectionChampions.classList.remove('hide');
 });
 

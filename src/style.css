@@ -223,7 +223,8 @@ ul {
 }
 
 li {
-    color: #BFA004
+    color: #BFA004;
+    margin: 3%;
 }
 
 pre {

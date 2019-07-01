@@ -79,6 +79,8 @@ buttonGBStart.addEventListener('click', (e) => {
 });
 
 //llamar a la data//
+let data = LOL.data;
+let cards = '';
 
 
 const printDataObject = (data) => {
@@ -86,10 +88,12 @@ const printDataObject = (data) => {
 for (const key in data) {
     if (data.hasOwnProperty(key)) {
         const element = data[key];
+
         newData.push(element)
         let cards = `<div id="cards-champions" class="card">
+        cards = `<div id="cards-champions" class="card">
+        <div id="card-img" class="card-img"> <p> <img src="${element.img}"></p> </div> <br>
         <p>${element.name}</p> <br>
-        <p> <img src="${element.img}"></p> <br>
         <p>${element.title}</p> <br>
         <p>Roles: ${element.tags}</p> <br>
         <p>Armadura: ${element.stats.armor}</p> <br>
@@ -101,6 +105,7 @@ for (const key in data) {
         root.insertAdjacentHTML('afterbegin', cards);
     }
 }
+
 
 
 }
@@ -115,3 +120,8 @@ filtrar.addEventListener('click', () => {
     root.innerHTML = '';
 printDataObject(data1)
 })
+
+//document.getElementById('filter-ability').insertAdjacentHTML('afterbegin',) = window.data.filter;//
+
+//console.log(data);//
+

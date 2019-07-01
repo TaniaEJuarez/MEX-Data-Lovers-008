@@ -1,4 +1,4 @@
-# Glance at LoL
+# ⚔️ Glance at LoL ⚔️
 
 Es un sitio que nos presenta una guía básica acerca de los principales elementos que componen el videojuego de League of Leyends.
 
@@ -22,10 +22,11 @@ En nuestros desing research, nos dimos a la tarea de investigar el perfil de los
 ![research](img/research.jpg)
 
 
-### Benchmarking ✔️
+### Benchmarking 📊
+
 
 Las principales aplicaciones utilizadas, se muestran en la siguiente tabla:
-![tabla-benchmarking](img/benchmarking.jpg)
+![tabla-benchmarking](img/benchmarking.png)
 
 
 
@@ -54,14 +55,82 @@ Al entender y detectar a los jugadores de esta plataforma, entendimos que:
 
 En general, los usuarios presentan las siguientes necesidades:
 
-• Entender conceptos básicos y tips
 • Entender el objetivo del juego		
 • Conocer las mecánicas mas básicas
+• Entender conceptos básicos y tips
 • Buscar una forma de mejorar
 
 
+### Encuesta ❓
+
+Decidimos realizar una encuesta a los usuarios de LoL que nos permitiera saber mas acerca de sus referencias, gustos e intereses. Las preguntas que lanzamos fueron las siguientes:
+
+![Encuesta](img/encuesta.png)
+
+• ¿Has jugado/visto League Of Legends en los últimos 3 meses?
+• ¿Cómo te identificas?
+• ¿Qué edad tienes?
+• ¿Cuántas veces a la semana lo juegas?
+• ¿Qué habilidades te resultan más importantes al conocer a un campeón?
+• ¿Qué roles te resultan más interesantes?
+• ¿Qué consideras mas importante al momento de elegir/comparar a un campeón?
+• ¿Qué posiciones ocupas al jugar?
+
+_Resultados_
+
+Obtuvimos 34 encuestas contestadas, teniendo los siguientes resultados:
+
+![pregunta1](img/pregunta1.png)
+
+![pregunta2](img/pregunta2.png)
+
+![pregunta3](img/pregunta3.png)
+
+![pregunta4](img/pregunta4.png)
+
+![pregunta5](img/pregunta5.png)
+
+![pregunta6](img/pregunta6.png)
+
+![pregunta7](img/pregunta7.png)
+
+![pregunta8](img/pregunta8.png)
 
 
+
+### Primer Sketch ✏️📒
+
+Como primer boceto, nos planteamos el siguiente:
+
+![sketch](img/sketch1.jpg)
+
+
+
+
+## Construido con ⚒️
+
+### ✔️ HTML5
+### ✔️ CSS3
+### ✔️ JS ES6
+
+
+
+
+## Autores 👓
+Leda Huerta /
+Tania E Juarez
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+- - - 
 
 # Data Lovers
 

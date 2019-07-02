@@ -292,7 +292,6 @@ hr.content-basics {
     padding: 2px 16px;
     margin: 10px;
     width: 25%;
-    height: 200px;
     border: 1px solid black;
     display: inline-flex;
     flex-wrap: wrap;
@@ -305,5 +304,15 @@ hr.content-basics {
 }
 
 .card-img {
+    display: block;
+    padding: auto;
+    margin: 1%;
     border: 3px solid red;
+}
+
+.card-text {
+    display: block;
+    padding: auto;
+    margin: 1%;
+    border: 3px solid olive;
 }

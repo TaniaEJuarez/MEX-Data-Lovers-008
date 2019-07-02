@@ -21,9 +21,6 @@
                 <li>
                     <a href="#" id="button-nav-champions">Champions</a>
                 </li>
-                <li>
-                    <a href="#" id="filtrar">Filtrar</a>
-                </li>
             </ol>
         </nav>
     </header>
@@ -143,17 +140,33 @@
     </section>
 
     <section id="champions" class="section-champions, hide">
+        <header>
+            <section>
+                <div>
+                    <select id="filter-roles" class="select-roles">
+                        <option value="">Choose One</option>
+                        <option value="Assassin">Asesinos</option>
+                        <option value="Fighter">Luchadores</option>
+                        <option value="Mage">Magos</option>
+                        <option value="Marksman">Tiradores</option>
+                        <option value="Tank">Tanques</option>
+                        <option value="Support">Soporte</option>
+                    </select>
+                </div>
+            </section>
+        </header>
         <main id="section-champions" class="main-cards">
             <div id="box-cards" class="box-cards">
                 <div id="cards-champions" class="card">
                 </div>
+                <div id="box-cards-filter" class="box-cards-filter hide">
+                    <p id="cards-filter"></p>
+                </div>
             </div>
+
         </main>
-        <main id="filter-section">
-            <div id="filter-box">
-                <p id="filter-ability"></p>
-            </div>
-        </main>
+
+
     </section>
 
     <footer>

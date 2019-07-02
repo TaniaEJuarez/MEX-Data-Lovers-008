@@ -1,6 +1,9 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/*const example = () => {
-  return 'example';
-};*/
+// Agregamos la función a nuestro objeto global window
+window.dataManager = {
+    filterByRole: (newData, selectRolesValue) => {
+        let filterRole = newData.filter(index => {
+            return index.tags.find((tag) => tag === selectRolesValue);
+        });
+        return filterRole;
+    }
+};

@@ -21,10 +21,25 @@
                 <li>
                     <a href="#" id="button-nav-champions">Champions</a>
                 </li>
-                <li>
-                    <a href="#" id="filtrar">Filtrar</a>
-                </li>
             </ol>
+            <div id="button-filter-role" class="button-filter-role">
+                <select id="filter-roles" class="select-roles">
+                        <option value="">Choose Role</option>
+                        <option value="Assassin">Asesinos</option>
+                        <option value="Fighter">Luchadores</option>
+                        <option value="Mage">Magos</option>
+                        <option value="Marksman">Tiradores</option>
+                        <option value="Tank">Tanques</option>
+                        <option value="Support">Soporte</option>
+                    </select>
+                <select id="filter-ability" class="select-ability">
+                        <option value="">Choose Ability</option>
+                        <option value="armor">AR</option>
+                        <option value="attackdamage">DA</option>
+                        <option value="attackspeedoffset">VA</option>
+                        <option value="movespeed">VM</option>
+                </select>
+            </div>
         </nav>
     </header>
 
@@ -142,18 +157,32 @@
         </article>
     </section>
 
-    <section id="champions" class="section-champions, hide">
+    <section id="champions" class="section-champions hide">
+        <!-- <header>
+            <section>
+                <div>
+                    <select id="filter-roles" class="select-roles">
+                        <option value="">Choose One</option>
+                        <option value="Assassin">Asesinos</option>
+                        <option value="Fighter">Luchadores</option>
+                        <option value="Mage">Magos</option>
+                        <option value="Marksman">Tiradores</option>
+                        <option value="Tank">Tanques</option>
+                        <option value="Support">Soporte</option>
+                    </select>
+                </div>
+                <div></div>
+            </section>
+        </header>-->
         <main id="section-champions" class="main-cards">
             <div id="box-cards" class="box-cards">
                 <div id="cards-champions" class="card">
                 </div>
             </div>
+
         </main>
-        <main id="filter-section">
-            <div id="filter-box">
-                <p id="filter-ability"></p>
-            </div>
-        </main>
+
+
     </section>
 
     <footer>

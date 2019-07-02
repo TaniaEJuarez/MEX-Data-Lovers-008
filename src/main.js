@@ -91,7 +91,6 @@ for (const key in data) {
 
         newData.push(element)
         let cards = `<div id="cards-champions" class="card">
-        cards = `<div id="cards-champions" class="card">
         <div id="card-img" class="card-img"> <p> <img src="${element.img}"></p> </div> <br>
         <p>${element.name}</p> <br>
         <p>${element.title}</p> <br>
@@ -111,15 +110,13 @@ for (const key in data) {
 }
 
 
+            $.each(newData, function (index, value) {
+                        console.log(value["Roles"]);
+                        if(value["element"] == "Roles"){
 
 
-filtrar.addEventListener('click', () => {
-    const miiNombre = newData.filter(index  => index.name == 'Zed')
-    // printDataObject(miiNombre)
-    let data1 = {data: miiNombre[0]}
-    root.innerHTML = '';
-printDataObject(data1)
-})
+
+})//
 
 //document.getElementById('filter-ability').insertAdjacentHTML('afterbegin',) = window.data.filter;//
 

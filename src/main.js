@@ -13,7 +13,7 @@ const buttonNavGBasics = document.getElementById('button-nav-gbasics');
 const buttonNavChampions = document.getElementById('button-nav-champions');
 //const filter = document.getElementById('filter'); (borre el boton si se usa crear nuevo)//
 const selectRoles = document.getElementById('filter-roles');
-
+const selectAbility = document.getElementById('filter-ability');
 
 
 //Variables para mostrar secciones//
@@ -110,8 +110,16 @@ const printDataObject = (data) => {
 }
 let filtrar = (ev) => {
     const role = ev.target.value;
-    const filterRole = window.dataManager.filterByRole(newData, role)
+    const filterRole = window.dataManager.filterByRole(newData, role);
     root.innerHTML = '';
     printDataObject(filterRole);
 };
 selectRoles.addEventListener('change', filtrar);
+
+let filterAbility = (ev) => {
+    const ability = ev.target.value;
+    const filterAbility = window.dataManager.filterByAbility(newData, ability);
+    root.innerHTML = '';
+    printDataObject(filterAbility);
+};
+selectAbility.addEventListener('change', filterAbility);

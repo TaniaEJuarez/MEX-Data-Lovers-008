@@ -9,7 +9,9 @@ window.dataManager = {
 
     filterByAbility: (newData, ability) => {
         let filterAbility = newData.filter(index => {
-            return index.stats.filter(stat => stat === ability);
+            console.log (Object.values(index.stats));
+            return index.stats(stat => stat === ability);
+            
         });
         return filterAbility;
     }

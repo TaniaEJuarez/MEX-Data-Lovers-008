@@ -116,10 +116,28 @@ let filtrar = (ev) => {
 };
 selectRoles.addEventListener('change', filtrar);
 
-let filterAbility = (ev) => {
+// // let filterAbility = (ev) => {
+// //     const ability = ev.target.value;
+// //     const filterAbility = window.dataManager.filterByAbility(newData, ability);
+// //     root.innerHTML = '';
+// //     printDataObject(filterAbility);
+// // };
+
+
+//funcion para filtrar por habilidades (los 10 mejores)
+let bestAbility = (ev) =>{
     const ability = ev.target.value;
-    const filterAbility = window.dataManager.filterByAbility(newData, ability);
-    root.innerHTML = '';
-    printDataObject(filterAbility);
-};
-selectAbility.addEventListener('change', filterAbility);
+    let higthAbility=  [0,0,0,0,0,0,0,0,0,0];
+    for (index in newData) {
+        for (let j = 0; j < 10; j++) {
+            const element = higthAbility[j];
+            if(newData[index].stats[ability]>higthAbility[j]){
+                higthAbility[j] = newData[index].stats[ability];
+            }
+        }       
+    }
+    console.log("Habilidad seleccionada:"+ability+":"+higthAbility);
+        return higthAbility;
+       
+}
+selectAbility.addEventListener('change', bestAbility);

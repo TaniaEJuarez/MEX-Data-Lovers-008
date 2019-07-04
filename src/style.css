@@ -101,7 +101,7 @@ ol,
 }
 
 .article-welcome {
-    background-image: url(img\league-of-legends-intro.jpg);
+    background-image: url(..img\league-of-legends-intro.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

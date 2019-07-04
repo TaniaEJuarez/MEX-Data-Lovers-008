@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: none;
 }
 
 .hide {
@@ -14,51 +15,42 @@
 /*Estilos Menu Navegacion*/
 
 ol,
-ul,
-{
+#button-filter-role {
     margin: 0;
     padding: 0;
+    width: 50%;
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
-.button-filter-role {
+.select-container {
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: left !important;
+}
+
+.button-filter-role,
+.select-roles,
+.select-ability {
+    margin: 0;
+    padding: 10%;
+    height: inherit;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     color: #BFA004;
     background-color: #323436;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: #BFA004 !important;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: flex;
-    text-align: start;
-    -webkit-appearance: menulist;
-    box-sizing: border-box;
-    align-items: center;
-    white-space: pre-wrap;
-    -webkit-rtl-ordering: logical;
-    background-color: #323436 !important;
-    cursor: default;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    border-radius: 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: none !important;
-    border-image: none;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    border: none;
 }
 
-.button-filter-role:hover {
+.select-roles:hover,
+.select-ability:hover {
     background-color: gray;
+    height: inherit;
 }
 
 .header,
@@ -71,29 +63,23 @@ ul,
     align-items: center;
 }
 
-header ol {
-    display: flex;
-    height: inherit;
-}
-
 .header ol li,
-.select-roles {
-    height: inherit;
-    text-align: center !important;
+.select-roles,
+.select-ability {
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-items: space-between;
+    justify-items: left;
+    text-align: center;
 }
 
 .header a {
+    height: auto;
     color: #BFA004;
     text-decoration: none;
-    height: inherit;
     display: flex;
-    align-items: center;
-    text-justify: auto;
+    text-justify: center;
     padding: 10%;
-    width: 100%;
 }
 
 .header ol li:hover {
@@ -115,15 +101,17 @@ header ol {
 .section-welcome {
     width: 100%;
     height: 600px;
-    background-image: url(league-of-legends-intro.jpg);
+}
+.article-welcome {
+    background-image: url(img\league-of-legends-intro.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-.article-welcome {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     width: 100%;
     height: 600px;
-    background-color: #04254698;
 }
 .w-header {
     padding: 50px;

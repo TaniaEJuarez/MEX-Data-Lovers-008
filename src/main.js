@@ -11,7 +11,7 @@ const buttonGBStart = document.getElementById('button-gb-start');
 const buttonNavWelcome = document.getElementById('button-nav-welcome');
 const buttonNavGBasics = document.getElementById('button-nav-gbasics');
 const buttonNavChampions = document.getElementById('button-nav-champions');
-//const filter = document.getElementById('filter'); (borre el boton si se usa crear nuevo)//
+//Variables de select de filtrado//
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
 
@@ -88,6 +88,7 @@ buttonGBStart.addEventListener('click', (e) => {
 
 //Crear funcion que muestre la data en pantalla//
 const printDataObject = (data) => {
+
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
@@ -108,13 +109,29 @@ const printDataObject = (data) => {
         }
     }
 }
-let filtrar = (ev) => {
+
+//Crear función que  reciba el valor seleccionado y ejecute la funcion de filtrado por rol y la imprima en pantalla//
+let filter = (ev) => {
     const role = ev.target.value;
     const filterRole = window.dataManager.filterByRole(newData, role);
     root.innerHTML = '';
     printDataObject(filterRole);
 };
-selectRoles.addEventListener('change', filtrar);
+selectRoles.addEventListener('change', filter);
+
+//Crear función que  reciba el valor seleccionado y ejecute la funcion que filtra la data por los mejores de cada habilidad e imprima en pantalla los mejores 10//
+let sortAbility = (ev) => {
+    const ability = ev.target.value;
+    const filterAbility = window.dataManager.filterByAbility(newData, ability);
+    let slice = filterAbility.slice(0, [10]);
+    // console.log(slice);
+    root.innerHTML = '';
+    printDataObject(slice);
+}
+
+selectAbility.addEventListener('change', sortAbility);
+
+
 
 // // let filterAbility = (ev) => {
 // //     const ability = ev.target.value;
@@ -125,19 +142,24 @@ selectRoles.addEventListener('change', filtrar);
 
 
 //funcion para filtrar por habilidades (los 10 mejores)
-let bestAbility = (ev) =>{
-    const ability = ev.target.value;
-    let higthAbility=  [0,0,0,0,0,0,0,0,0,0];
-    for (index in newData) {
-        for (let j = 0; j < 10; j++) {
-            const element = higthAbility[j];
-            if(newData[index].stats[ability]>higthAbility[j]){
-                higthAbility[j] = newData[index].stats[ability];
-            }
-        }       
-    }
-    console.log("Habilidad seleccionada:"+ability+":"+higthAbility);
-        return higthAbility;
-       
-}
-selectAbility.addEventListener('change', bestAbility);
+// let bestAbility = (ev) => {
+//     const ability = ev.target.value;
+//     let higthAbility = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+//     for (index in newData) {
+//         for (let j = 0; j < 10; j++) {
+//             const element = higthAbility[j];
+//             if (newData[index].stats[ability] > higthAbility[j]) {
+//                 higthAbility[j] = newData[index].stats[ability];
+//                 console.log(higthAbility);
+//             }
+//         }
+//     }
+//     console.log("Habilidad seleccionada:" + ability + ":" + higthAbility);
+//         return higthAbility;
+
+// }
+
+// selectAbility.addEventListener('change', bestAbility);
+
+// root.innerHTML = '';
+// printDataObject(ability);

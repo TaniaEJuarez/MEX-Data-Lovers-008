@@ -11,10 +11,11 @@ const buttonGBStart = document.getElementById('button-gb-start');
 const buttonNavWelcome = document.getElementById('button-nav-welcome');
 const buttonNavGBasics = document.getElementById('button-nav-gbasics');
 const buttonNavChampions = document.getElementById('button-nav-champions');
-//const filter = document.getElementById('filter'); (borre el boton si se usa crear nuevo)//
+
+//variables select para filtrado//
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
-
+const buttonAlphabetic = document.getElementById('button-alphabetic');
 
 //Variables para mostrar secciones//
 const sectionGameBasics = document.getElementById('game-basics');
@@ -92,7 +93,7 @@ const printDataObject = (data) => {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
             newData.push(element);
-            cards = `<div id="cards-champions" class="card">
+                        cards = `<div id="cards-champions" class="card">
                         <div id="card-img" class="card-img"> <p><img src="${element.img}"></p></div> <br>
                         <div id="card-text" class="card-text"> 
                              <p>${element.name}</p> <br>
@@ -104,17 +105,40 @@ const printDataObject = (data) => {
                              <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
                         </div> 
                         </div>`;
-            root.insertAdjacentHTML('afterbegin', cards);
+            root.insertAdjacentHTML('beforeend', cards);
         }
-    }
+    }console.log(newData);  
 }
-let filtrar = (ev) => {
+let filter = (ev) => {
     const role = ev.target.value;
     const filterRole = window.dataManager.filterByRole(newData, role);
     root.innerHTML = '';
     printDataObject(filterRole);
 };
-selectRoles.addEventListener('change', filtrar);
+selectRoles.addEventListener('change', filter);
+
+
+//crear funcion que filtre/ordene la data por los 10 mejores de cada habilidad y la imprima en pantalla//
+let sortAbility = (ev) => {
+    const ability = ev.target.value;
+    const filterAbility = window.dataManager.filterByAbility(newData, ability);
+    printDataObject(filterAbility);
+}
+
+
+selectAbility.addEventListener('change', sortAbility);
+
+
+//crear funcion que ordene la data alfabeticamente//
+let sortAlphabetic = (ev) => {
+    const order = ev.target;
+    console-log(order);
+    const orderAlphabetic = window.dataManager.orderByAlphabetic(newData, order);
+    printDataObject(orderAlphabetic);
+}
+buttonAlphabetic.addEventListener('click', sortAlphabetic);
+
+//funcion para filtrar por habilidades (los 10 mejores), tomando como base la funcion de filtrado
 
 // // let filterAbility = (ev) => {
 // //     const ability = ev.target.value;
@@ -124,20 +148,25 @@ selectRoles.addEventListener('change', filtrar);
 // // };
 
 
-//funcion para filtrar por habilidades (los 10 mejores)
-let bestAbility = (ev) =>{
-    const ability = ev.target.value;
-    let higthAbility=  [0,0,0,0,0,0,0,0,0,0];
-    for (index in newData) {
-        for (let j = 0; j < 10; j++) {
-            const element = higthAbility[j];
-            if(newData[index].stats[ability]>higthAbility[j]){
-                higthAbility[j] = newData[index].stats[ability];
-            }
-        }       
-    }
-    console.log("Habilidad seleccionada:"+ability+":"+higthAbility);
-        return higthAbility;
+//funcion para filtrar por habilidades (los 10 mejores), usando for dentro de un for in.
+
+// let bestAbility = (ev) =>{
+//     const ability = ev.target.value;
+//     let higthAbility=  [0,0,0,0,0,0,0,0,0,0];
+//     //let higthAbility2=  [null,null, null, null, null, null, null, null, null, null];
+//     for (index in newData) {
+//         for (let i = 0; i < 10; i++) {
+//             const element = higthAbility[i];
+//             if(newData[index].stats[ability]>higthAbility[i]);
+//                 //(newData[index]);
+//                 higthAbility[i] = newData[index].stats[ability];
+//             }
+//         }       
+    
+//     root.innerHTML='';
+//     printDataObject(higthAbility2);   
+//     console.log("Habilidad seleccionada:"+ability+":"+higthAbility);
+//     //return higthAbility;
        
-}
-selectAbility.addEventListener('change', bestAbility);
+// };
+// selectAbility.addEventListener('change', bestAbility);

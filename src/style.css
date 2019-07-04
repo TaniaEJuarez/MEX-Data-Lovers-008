@@ -98,10 +98,11 @@ ol,
 .section-welcome {
     width: 100%;
     height: 600px;
+    background-color: #323436;
 }
 
 .article-welcome {
-    background-image: url(..img\league-of-legends-intro.jpg);
+    background-image: url(lol-intro.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

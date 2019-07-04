@@ -20,7 +20,6 @@ const selectAbility = document.getElementById('filter-ability');
 const sectionGameBasics = document.getElementById('game-basics');
 const sectionChampions = document.getElementById('champions');
 const sectionWelcome = document.getElementById('welcome');
-const sectionChampionsFilter = document.getElementById('box-cards-filter');
 
 
 //Crear variables para modal//
@@ -69,7 +68,7 @@ buttonNavChampions.addEventListener('click', () => {
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
     printDataObject(data)
-});
+})
 
 
 buttonMeetChampions.addEventListener('click', (e) => {
@@ -77,7 +76,7 @@ buttonMeetChampions.addEventListener('click', (e) => {
     sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
     printDataObject(data)
-});
+})
 
 buttonGBStart.addEventListener('click', (e) => {
     sectionGameBasics.classList.add('hide');
@@ -88,7 +87,7 @@ buttonGBStart.addEventListener('click', (e) => {
 
 //Crear funcion que muestre la data en pantalla//
 const printDataObject = (data) => {
-
+    newData = [];
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
@@ -108,7 +107,7 @@ const printDataObject = (data) => {
             root.insertAdjacentHTML('afterbegin', cards);
         }
     }
-}
+};
 
 //Crear función que  reciba el valor seleccionado y ejecute la funcion de filtrado por rol y la imprima en pantalla//
 let filter = (ev) => {
@@ -127,7 +126,7 @@ let sortAbility = (ev) => {
     // console.log(slice);
     root.innerHTML = '';
     printDataObject(slice);
-}
+};
 
 selectAbility.addEventListener('change', sortAbility);
 

@@ -21,14 +21,14 @@ ol,
     width: 50%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    align-items: space-between;
 }
 
 .select-container {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: left !important;
+    align-items: space-between;
 }
 
 .button-filter-role,
@@ -50,11 +50,9 @@ ol,
 .select-roles:hover,
 .select-ability:hover {
     background-color: gray;
-    height: inherit;
 }
 
-.header,
-{
+.header {
     background-color: #1b2127;
     color: #BFA004;
     display: flex;
@@ -69,7 +67,7 @@ ol,
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-items: left;
+    align-items: space-between;
     text-align: center;
 }
 
@@ -95,13 +93,13 @@ ol,
 }
 
 
-}
-
 /*Estilos de  section welcome*/
+
 .section-welcome {
     width: 100%;
     height: 600px;
 }
+
 .article-welcome {
     background-image: url(img\league-of-legends-intro.jpg);
     background-repeat: no-repeat;
@@ -113,24 +111,30 @@ ol,
     width: 100%;
     height: 600px;
 }
+
 .w-header {
     padding: 50px;
     text-align: center;
     color: white;
 }
+
 .welcome-content {
     color: white;
     font-size: bold;
     text-align: center;
 }
+
 .button-meet-c {
     background-color: 136, 127, 4;
     color: #1D0259
 }
 
+
 /*Estilos de Modal*/
 
+
 /*Estilo del flexbox modal*/
+
 .flex {
     width: 100%;
     height: 100%;
@@ -139,7 +143,9 @@ ol,
     align-items: center;
 }
 
+
 /*Estilos de boton del Modal:*/
+
 .b-m-button {
     background-color: none;
     align-items: center;
@@ -148,12 +154,15 @@ ol,
     border-radius: 100%;
     overflow: hidden;
 }
+
 .b-m-button:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
 
+
 /*Estilos del Contenido del Modal*/
+
 .m-header,
 .m-footer {
     text-align: center;
@@ -161,10 +170,12 @@ ol,
     background-color: rgb(136, 127, 4);
     color: rgb(241, 246, 248);
 }
+
 .m-body {
     text-align: center;
     padding: 20 px 16px;
 }
+
 .m-box {
     display: none;
     position: fixed;
@@ -178,6 +189,7 @@ ol,
     ALIGN-ITEMS: CENTER;
     JUSTIFY-CONTENT: CENTER;
 }
+
 .m-content {
     position: relative;
     background-color: rgba(6, 43, 92, 0.849);
@@ -189,95 +201,105 @@ ol,
     animation-duration: 1s;
 }
 
+
 /*Animación del Modal*/
+
 @keyframes modal {
     from {
         top: -330px;
         opacity: 0;
     }
-    
     to {
         top: 0;
         opacity: 1;
     }
 }
+
 .close {
     color: rgb(243, 243, 230);
     font-size: 25px;
     font-weight: bold;
 }
+
 .close:hover {
     color: rgb(6, 7, 1);
     text-decoration: none;
     cursor: pointer;
 }
 
+
 /*Estilos de Game Basics*/
+
 #game-basics {
     font-family: adobe-garamond-pro, serif;
     font-style: normal;
     border: 5px solid gray;
     background-image: url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
     /*opacity: 0.5;*/
-    
     height: 100%;
     background-repeat: no-repeat;
     /*solo una imagen*/
-    
     background-position: center;
     /*posicion de la imagen de fondo*/
-    
     background-size: cover;
     background-attachment: fixed;
     /*scroll. La imagen se queda fija*/
-    
     padding: 2rem;
 }
+
 ul {
     font-family: adobe-garamond-pro, serif;
     font-weight: bold;
     /* background: #cce5ff;*/
-    
     margin: 5px;
     padding: 8px 16px;
     border-bottom: 1px solid #ddd;
 }
+
 li {
     color: #BFA004;
     margin: 3%;
 }
+
 pre {
     display: block;
     margin: 1em 0;
     font-family: adobe-garamond-pro, serif;
     white-space: pre-wrap;
 }
+
 h2 {
     font-size: 40px;
     color: gold
 }
+
 button {
     text-align: center;
     display: inline-block;
     cursor: pointer;
 }
+
 .content-basics {
     background-color: rgba(26, 46, 221, 0.5);
     font-size: 99%;
     font-weight: bold;
     font-weight: 900;
 }
+
 hr.content-basics {
     border: 3px solid gold;
 }
 
+
 /* Estilos seccion Champions*/
+
 .section-champions {
     width: 100%;
     height: 100%;
     display: flex;
     background-color: whitesmoke;
 }
+
 .main-cards {
     width: 80%;
     height: 80%;
@@ -287,6 +309,7 @@ hr.content-basics {
     align-items: space-between;
     justify-items: space-between;
 }
+
 .box-cards {
     width: 100%;
     height: 100%;
@@ -296,6 +319,7 @@ hr.content-basics {
     align-items: space-between;
     justify-items: space-between;
 }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
     transition: 0.3s;
@@ -308,15 +332,18 @@ hr.content-basics {
     align-items: space-between;
     justify-items: space-between;
 }
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba (0, 0, 0, 0, 2);
 }
+
 .card-img {
     display: block;
     padding: auto;
     margin: 1%;
     border: 3px solid red;
 }
+
 .card-text {
     display: block;
     padding: auto;

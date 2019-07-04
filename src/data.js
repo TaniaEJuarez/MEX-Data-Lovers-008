@@ -18,25 +18,5 @@ window.dataManager = {
             }
             return 0;
         })
-
     }
-
-
-
-
-
-
-
-
-
-
-
-    //     filterByAbility: (newData, ability) => {
-    //         let filterAbility = newData.filter(index => {
-    //             console.log (Object.values(index.data));
-    //             return index.stats(stat => stat === ability);
-
-    //         });
-    //         return filterAbility;
-    //     }
 };

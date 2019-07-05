@@ -12,7 +12,7 @@ const buttonNavWelcome = document.getElementById('button-nav-welcome');
 const buttonNavGBasics = document.getElementById('button-nav-gbasics');
 const buttonNavChampions = document.getElementById('button-nav-champions');
 
-//variables select para filtrado//
+//Variables de select de filtrado//
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
 const buttonAlphabetic = document.getElementById('button-alphabetic');
@@ -21,7 +21,6 @@ const buttonAlphabetic = document.getElementById('button-alphabetic');
 const sectionGameBasics = document.getElementById('game-basics');
 const sectionChampions = document.getElementById('champions');
 const sectionWelcome = document.getElementById('welcome');
-const sectionChampionsFilter = document.getElementById('box-cards-filter');
 
 
 //Crear variables para modal//
@@ -69,18 +68,18 @@ buttonNavChampions.addEventListener('click', () => {
     sectionChampions.classList.remove('hide');
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
-    printDataObject(data)
+    printDataObject(data);
 });
 
 
-buttonMeetChampions.addEventListener('click', (e) => {
+buttonMeetChampions.addEventListener('click', () => {
     sectionWelcome.classList.add('hide');
     sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
-    printDataObject(data)
+    printDataObject(data);
 });
 
-buttonGBStart.addEventListener('click', (e) => {
+buttonGBStart.addEventListener('click', () => {
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
     sectionChampions.classList.remove('hide');
@@ -89,6 +88,7 @@ buttonGBStart.addEventListener('click', (e) => {
 
 //Crear funcion que muestre la data en pantalla//
 const printDataObject = (data) => {
+    newData = [];
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
@@ -107,8 +107,11 @@ const printDataObject = (data) => {
                         </div>`;
             root.insertAdjacentHTML('beforeend', cards);
         }
-    }console.log(newData);  
-}
+
+    }
+};
+
+//Crear función que  reciba el valor seleccionado y ejecute la funcion de filtrado por rol y la imprima en pantalla//
 let filter = (ev) => {
     const role = ev.target.value;
     const filterRole = window.dataManager.filterByRole(newData, role);
@@ -118,55 +121,37 @@ let filter = (ev) => {
 selectRoles.addEventListener('change', filter);
 
 
-//crear funcion que filtre/ordene la data por los 10 mejores de cada habilidad y la imprima en pantalla//
+//Crear función que  reciba el valor seleccionado y ejecute la funcion que filtra la data por los mejores de cada habilidad e imprima en pantalla los mejores 10//
 let sortAbility = (ev) => {
     const ability = ev.target.value;
     const filterAbility = window.dataManager.filterByAbility(newData, ability);
-    printDataObject(filterAbility);
-}
-
-
+    let slice = filterAbility.slice(0, [10]);
+    // console.log(slice);
+    root.innerHTML = '';
+    printDataObject(slice);
+};
 selectAbility.addEventListener('change', sortAbility);
 
 
-//crear funcion que ordene la data alfabeticamente//
-let sortAlphabetic = (ev) => {
-    const order = ev.target;
-    console-log(order);
-    const orderAlphabetic = window.dataManager.orderByAlphabetic(newData, order);
-    printDataObject(orderAlphabetic);
-}
-buttonAlphabetic.addEventListener('click', sortAlphabetic);
-
-//funcion para filtrar por habilidades (los 10 mejores), tomando como base la funcion de filtrado
-
-// // let filterAbility = (ev) => {
-// //     const ability = ev.target.value;
-// //     const filterAbility = window.dataManager.filterByAbility(newData, ability);
-// //     root.innerHTML = '';
-// //     printDataObject(filterAbility);
-// // };
-
-
-//funcion para filtrar por habilidades (los 10 mejores), usando for dentro de un for in.
-
-// let bestAbility = (ev) =>{
+//funcion para filtrar por habilidades (los 10 mejores)
+// let bestAbility = (ev) => {
 //     const ability = ev.target.value;
-//     let higthAbility=  [0,0,0,0,0,0,0,0,0,0];
-//     //let higthAbility2=  [null,null, null, null, null, null, null, null, null, null];
+//     let higthAbility = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 //     for (index in newData) {
-//         for (let i = 0; i < 10; i++) {
-//             const element = higthAbility[i];
-//             if(newData[index].stats[ability]>higthAbility[i]);
-//                 //(newData[index]);
-//                 higthAbility[i] = newData[index].stats[ability];
+//         for (let j = 0; j < 10; j++) {
+//             const element = higthAbility[j];
+//             if (newData[index].stats[ability] > higthAbility[j]) {
+//                 higthAbility[j] = newData[index].stats[ability];
+//                 console.log(higthAbility);
 //             }
-//         }       
-    
-//     root.innerHTML='';
-//     printDataObject(higthAbility2);   
-//     console.log("Habilidad seleccionada:"+ability+":"+higthAbility);
-//     //return higthAbility;
-       
-// };
+//         }
+//     }
+//     console.log("Habilidad seleccionada:" + ability + ":" + higthAbility);
+//         return higthAbility;
+
+// }
+
 // selectAbility.addEventListener('change', bestAbility);
+
+// root.innerHTML = '';
+// printDataObject(ability);

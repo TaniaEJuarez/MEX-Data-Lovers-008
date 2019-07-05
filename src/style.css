@@ -1,337 +1,430 @@
-/*limpiar estilos por defecto*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.hide {
-    display: none;
-}
-
-
-/*Estilos Menu Navegacion*/
-
-ol,
-ul,
-{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-
-.button-filter-role {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    color: #BFA004;
-    background-color: #323436;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: #BFA004 !important;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: flex;
-    text-align: start;
-    -webkit-appearance: menulist;
-    box-sizing: border-box;
-    align-items: center;
-    white-space: pre-wrap;
-    -webkit-rtl-ordering: logical;
-    background-color: #323436 !important;
-    cursor: default;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    border-radius: 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: none !important;
-    border-image: none;
-}
-
-.button-filter-role:hover {
-    background-color: gray;
-}
-
-.header,
-{
-    background-color: #1b2127;
-    color: #BFA004;
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    align-items: center;
-}
-
-header ol {
-    display: flex;
-    height: inherit;
-}
-
-.header ol li,
-.select-roles {
-    height: inherit;
-    text-align: center !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: space-between;
-}
-
-.header a {
-    color: #BFA004;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    text-justify: auto;
-    padding: 10%;
-    width: 100%;
-}
-
-.header ol li:hover {
-    background-color: gray;
-}
-
-.menu {
-    display: flex;
-    height: inherit;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #323436;
-}
-
-
-}
-
-/*Estilos de  section welcome*/
-.section-welcome {
-    width: 100%;
-    height: 600px;
-    background-image: url(league-of-legends-intro.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.article-welcome {
-    width: 100%;
-    height: 600px;
-    background-color: #04254698;
-}
-.w-header {
-    padding: 50px;
-    text-align: center;
-    color: white;
-}
-.welcome-content {
-    color: white;
-    font-size: bold;
-    text-align: center;
-}
-.button-meet-c {
-    background-color: 136, 127, 4;
-    color: #1D0259
-}
-
-/*Estilos de Modal*/
-
-/*Estilo del flexbox modal*/
-.flex {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*Estilos de boton del Modal:*/
-.b-m-button {
-    background-color: none;
-    align-items: center;
-    display: inline-block;
-    padding: 5 px;
-    border-radius: 100%;
-    overflow: hidden;
-}
-.b-m-button:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-/*Estilos del Contenido del Modal*/
-.m-header,
-.m-footer {
-    text-align: center;
-    padding: 8px 16px;
-    background-color: rgb(136, 127, 4);
-    color: rgb(241, 246, 248);
-}
-.m-body {
-    text-align: center;
-    padding: 20 px 16px;
-}
-.m-box {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(92, 83, 6, 0.747);
-    ALIGN-ITEMS: CENTER;
-    JUSTIFY-CONTENT: CENTER;
-}
-.m-content {
-    position: relative;
-    background-color: rgba(6, 43, 92, 0.849);
-    color: white;
-    margin: auto;
-    width: 30%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
-    animation-name: modal;
-    animation-duration: 1s;
-}
-
-/*Animación del Modal*/
-@keyframes modal {
-    from {
-        top: -330px;
-        opacity: 0;
-    }
-    
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
-.close {
-    color: rgb(243, 243, 230);
-    font-size: 25px;
-    font-weight: bold;
-}
-.close:hover {
-    color: rgb(6, 7, 1);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/*Estilos de Game Basics*/
-#game-basics {
-    font-family: adobe-garamond-pro, serif;
-    font-style: normal;
-    border: 5px solid gray;
-    background-image: url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
-    /*opacity: 0.5;*/
-    
-    height: 100%;
-    background-repeat: no-repeat;
-    /*solo una imagen*/
-    
-    background-position: center;
-    /*posicion de la imagen de fondo*/
-    
-    background-size: cover;
-    background-attachment: fixed;
-    /*scroll. La imagen se queda fija*/
-    
-    padding: 2rem;
-}
-ul {
-    font-family: adobe-garamond-pro, serif;
-    font-weight: bold;
-    /* background: #cce5ff;*/
-    
-    margin: 5px;
-    padding: 8px 16px;
-    border-bottom: 1px solid #ddd;
-}
-li {
-    color: #BFA004;
-    margin: 3%;
-}
-pre {
-    display: block;
-    margin: 1em 0;
-    font-family: adobe-garamond-pro, serif;
-    white-space: pre-wrap;
-}
-h2 {
-    font-size: 40px;
-    color: gold
-}
-button {
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-}
-.content-basics {
-    background-color: rgba(26, 46, 221, 0.5);
-    font-size: 99%;
-    font-weight: bold;
-    font-weight: 900;
-}
-hr.content-basics {
-    border: 3px solid gold;
-}
-
-/* Estilos seccion Champions*/
-.section-champions {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: whitesmoke;
-}
-.main-cards {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-items: space-between;
-}
-.box-cards {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: inherit;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-items: space-between;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
-    transition: 0.3s;
-    padding: 2px 16px;
-    margin: 10px;
-    width: 20%;
-    border: 1px solid black;
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-items: space-between;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba (0, 0, 0, 0, 2);
-}
-.card-img {
-    display: block;
-    padding: auto;
-    margin: 1%;
-    border: 3px solid red;
-}
-.card-text {
-    display: block;
-    padding: auto;
-    margin: 1%;
-    border: 3px solid olive;
-}
+ /*limpiar estilos por defecto*/
+ 
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ /*Crear sistema de grillas: contenedor del sistema*/
+ 
+ .container {
+     width: 100%;
+     margin: 0px auto;
+     height: 100vh;
+ }
+ /*Crear columnas*/
+ /*estilo general del sistema*/
+ 
+ [class*='col-'] {
+     float: left;
+     min-height: 10 px;
+     padding: 12px;
+ }
+ /*cada columna mide 8.33%*/
+ 
+ .col-1 {
+     width: 8.333333333333332%;
+ }
+ 
+ .col-2 {
+     width: 16.666666666666664%;
+ }
+ 
+ .col-3 {
+     width: 25%;
+ }
+ 
+ .col-4 {
+     width: 33.33333333333333%;
+ }
+ 
+ .col-5 {
+     width: 41.66666666666667%;
+ }
+ 
+ .col-6 {
+     width: 50%;
+ }
+ 
+ .col-7 {
+     width: 58.333333333333336%;
+ }
+ 
+ .col-8 {
+     width: 66.66666666666666%;
+ }
+ 
+ .col-9 {
+     width: 75%;
+ }
+ 
+ .col-10 {
+     width: 83.33333333333334%;
+ }
+ 
+ .col-11 {
+     width: 91.66666666666666%;
+ }
+ 
+ .col-12 {
+     width: 100%;
+ }
+ /*Crear filas*/
+ 
+ .row {
+     margin: auto;
+     width: 100%;
+     height: auto;
+ }
+ 
+ .blue {
+     background-color: #1D0259;
+ }
+ 
+ .yellow {
+     background-color: #BFA004;
+ }
+ 
+ .pink {
+     background-color: pink;
+     /* margin-top: 1%; */
+ }
+ 
+ .orange {
+     background-color: orangered;
+ }
+ 
+ .white {
+     background-color: whitesmoke;
+ }
+ 
+ .brown {
+     background-color: brown;
+ }
+ 
+ .hide {
+     display: none;
+ }
+ /*Estilos Menu Navegacion*/
+ 
+ ol,
+ #button-filter-role {
+     margin: 0;
+     padding: 0;
+     width: 50%;
+     list-style: none;
+     display: flex;
+     align-items: space-between;
+ }
+ 
+ .select-container {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     align-items: space-between;
+ }
+ 
+ .button-filter-role,
+ .select-roles,
+ .select-ability {
+     margin: 0;
+     padding: 10%;
+     height: inherit;
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+     color: #BFA004;
+     background-color: #323436;
+     -moz-appearance: none !important;
+     -webkit-appearance: none !important;
+     border: none;
+ }
+ 
+ .select-roles:hover,
+ .select-ability:hover {
+     background-color: gray;
+ }
+ 
+ .header {
+     background-color: #1b2127;
+     color: #BFA004;
+     display: flex;
+     justify-content: space-between;
+     height: 10vh;
+     align-items: center;
+ }
+ 
+ .header ol li,
+ .select-roles,
+ .select-ability {
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: space-between;
+     text-align: center;
+ }
+ 
+ .header a {
+     height: auto;
+     color: #BFA004;
+     text-decoration: none;
+     display: flex;
+     text-justify: center;
+     padding: 10%;
+ }
+ 
+ .header ol li:hover {
+     background-color: gray;
+ }
+ 
+ .menu {
+     display: flex;
+     height: inherit;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     background-color: #323436;
+ }
+ /*Estilos de  section welcome*/
+ 
+ .section-welcome {
+     width: 100%;
+     height: 600px;
+     background-color: #323436;
+ }
+ 
+ .article-welcome {
+     background-image: url(lol-intro.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     width: 100%;
+     height: 600px;
+ }
+ 
+ .w-header {
+     padding: 50px;
+     text-align: center;
+     color: white;
+ }
+ 
+ .welcome-content {
+     color: white;
+     font-size: bold;
+     text-align: center;
+ }
+ 
+ .button-meet-c {
+     background-color: 136, 127, 4;
+     color: #1D0259
+ }
+ /*Estilos de Modal*/
+ /*Estilo del flexbox modal*/
+ 
+ .flex {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ /*Estilos de boton del Modal:*/
+ 
+ .b-m-button {
+     background-color: none;
+     align-items: center;
+     display: inline-block;
+     padding: 5 px;
+     border-radius: 100%;
+     overflow: hidden;
+ }
+ 
+ .b-m-button:hover {
+     -webkit-transform: scale(1.3);
+     transform: scale(1.3);
+ }
+ /*Estilos del Contenido del Modal*/
+ 
+ .m-header,
+ .m-footer {
+     text-align: center;
+     padding: 8px 16px;
+     background-color: rgb(136, 127, 4);
+     color: rgb(241, 246, 248);
+ }
+ 
+ .m-body {
+     text-align: center;
+     padding: 20 px 16px;
+ }
+ 
+ .m-box {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     overflow: auto;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(92, 83, 6, 0.747);
+     ALIGN-ITEMS: CENTER;
+     JUSTIFY-CONTENT: CENTER;
+ }
+ 
+ .m-content {
+     position: relative;
+     background-color: rgba(6, 43, 92, 0.849);
+     color: white;
+     margin: auto;
+     width: 30%;
+     box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+     animation-name: modal;
+     animation-duration: 1s;
+ }
+ /*Animación del Modal*/
+ 
+ @keyframes modal {
+     from {
+         top: -330px;
+         opacity: 0;
+     }
+     to {
+         top: 0;
+         opacity: 1;
+     }
+ }
+ 
+ .close {
+     color: rgb(243, 243, 230);
+     font-size: 25px;
+     font-weight: bold;
+ }
+ 
+ .close:hover {
+     color: rgb(6, 7, 1);
+     text-decoration: none;
+     cursor: pointer;
+ }
+ /*Estilos de Game Basics*/
+ 
+ #game-basics {
+     font-family: adobe-garamond-pro, serif;
+     font-style: normal;
+     border: 5px solid gray;
+     background-image: url("https://na.leagueoflegends.com/sites/default/files/styles/scale_xlarge/public/upload/2016.04.11.articlebanner.champskinsale.en_.jpg?itok=wzdDckJx");
+     /*opacity: 0.5;*/
+     height: 100%;
+     background-repeat: no-repeat;
+     /*solo una imagen*/
+     background-position: center;
+     /*posicion de la imagen de fondo*/
+     background-size: cover;
+     background-attachment: fixed;
+     /*scroll. La imagen se queda fija*/
+     padding: 2rem;
+ }
+ 
+ ul {
+     font-family: adobe-garamond-pro, serif;
+     font-weight: bold;
+     /* background: #cce5ff;*/
+     margin: 5px;
+     padding: 8px 16px;
+     border-bottom: 1px solid #ddd;
+ }
+ 
+ li {
+     color: #BFA004;
+     margin: 3%;
+ }
+ 
+ pre {
+     display: block;
+     margin: 1em 0;
+     font-family: adobe-garamond-pro, serif;
+     white-space: pre-wrap;
+ }
+ 
+ h2 {
+     font-size: 40px;
+     color: gold
+ }
+ 
+ button {
+     text-align: center;
+     display: inline-block;
+     cursor: pointer;
+ }
+ 
+ .content-basics {
+     background-color: rgba(26, 46, 221, 0.5);
+     font-size: 99%;
+     font-weight: bold;
+     font-weight: 900;
+ }
+ 
+ hr.content-basics {
+     border: 3px solid gold;
+ }
+ /* Estilos seccion Champions*/
+ 
+ .section-champions {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     background-color: whitesmoke;
+ }
+ 
+ .main-cards {
+     width: 80%;
+     height: 80%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: space-between;
+     justify-items: space-between;
+ }
+ 
+ .box-cards {
+     width: 100%;
+     height: 100%;
+     margin: auto;
+     display: inherit;
+     flex-wrap: wrap;
+     align-items: space-between;
+     justify-items: space-between;
+ }
+ 
+ .card {
+     box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0, 2);
+     transition: 0.3s;
+     padding: 2px 16px;
+     margin: 10px;
+     width: 20%;
+     border: 1px solid black;
+     display: inline-flex;
+     flex-wrap: wrap;
+     align-items: space-between;
+     justify-items: space-between;
+ }
+ 
+ .card:hover {
+     box-shadow: 0 8px 16px 0 rgba (0, 0, 0, 0, 2);
+ }
+ 
+ .card-img {
+     display: block;
+     padding: auto;
+     margin: 1%;
+     border: 3px solid red;
+ }
+ 
+ .card-text {
+     display: block;
+     padding: auto;
+     margin: 1%;
+     border: 3px solid olive;
+ }

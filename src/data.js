@@ -17,6 +17,6 @@ window.dataManager = {
                 return 1;
             }
             return 0;
-        })
+        });
     }
 };

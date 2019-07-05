@@ -67,18 +67,18 @@ buttonNavChampions.addEventListener('click', () => {
     sectionChampions.classList.remove('hide');
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
-    printDataObject(data)
-})
+    printDataObject(data);
+});
 
 
-buttonMeetChampions.addEventListener('click', (e) => {
+buttonMeetChampions.addEventListener('click', () => {
     sectionWelcome.classList.add('hide');
     sectionGameBasics.classList.add('hide');
     sectionChampions.classList.remove('hide');
-    printDataObject(data)
-})
+    printDataObject(data);
+});
 
-buttonGBStart.addEventListener('click', (e) => {
+buttonGBStart.addEventListener('click', () => {
     sectionGameBasics.classList.add('hide');
     sectionWelcome.classList.add('hide');
     sectionChampions.classList.remove('hide');

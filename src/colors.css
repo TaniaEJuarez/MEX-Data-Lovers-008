@@ -19,9 +19,6 @@
 .Champ-LOL-4-hsla { color: hsla(0, 57, 34, 1); }
 .Champ-LOL-5-hsla { color: hsla(0, 0, 5, 1); }
 
-
-
-
 /* Color Theme Swatches in Hex */
 .League-of-Legends-700x500-1-hex { color: #3703A6; }
 .League-of-Legends-700x500-2-hex { color: #1D0259; }
@@ -42,3 +39,31 @@
 .League-of-Legends-700x500-3-hsla { color: hsla(50, 95, 38, 1); }
 .League-of-Legends-700x500-4-hsla { color: hsla(32, 96, 43, 1); }
 .League-of-Legends-700x500-5-hsla { color: hsla(0, 95, 38, 1); } 
+
+/* Color theme image in RGB*/
+.Lol-rgb { color: rgb(54, 2, 89);}
+.Lol-rgb { color: rgb(71, 3, 166);}
+.Lol-rgb { color: rgb(129, 0, 125);}
+.Lol-rgb { color: rgb(55, 100, 140);} 
+.Lol-rgb { color: rgb(20, 89, 37);}
+
+/* Color theme image in HSV*/
+.Lol-hsv { color: hsv(276, 98, 35);}
+.Lol-hsv { color: hsv(265, 98, 65);}
+.Lol-hsv { color: hsv(302, 100, 51);}
+.Lol-hsv { color: hsv(208, 61, 55);}
+.Lol-hsv { color: hsv(135, 78, 35);}
+
+/* Color theme image in CMYK*/
+.Lol-cmyk { color: cmyk(39, 98, 0, 65);}
+.Lol-cmyk { color: cmyk(57, 98, 0, 35);}
+.Lol-cmyk { color: cmyk(0, 100, 3, 49);}
+.Lol-cmyk { color: cmyk(61, 29, 0, 45);}
+.Lol-cmyk { color: cmyk(78, 0, 58, 65);}
+
+/* Color theme image in LAB*/
+.Lol-lab { color: lab(13, 39, -39); }
+.Lol-lab { color: lab(24, 59, -69); }
+.Lol-lab { color: lab(30, 59, -35); }
+.Lol-lab { color: lab(41, -3, -27); }
+.Lol-lab { color: lab(33, -33, 24); }

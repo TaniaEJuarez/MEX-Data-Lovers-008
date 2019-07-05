@@ -11,11 +11,10 @@ const buttonGBStart = document.getElementById('button-gb-start');
 const buttonNavWelcome = document.getElementById('button-nav-welcome');
 const buttonNavGBasics = document.getElementById('button-nav-gbasics');
 const buttonNavChampions = document.getElementById('button-nav-champions');
-
 //Variables de select de filtrado//
 const selectRoles = document.getElementById('filter-roles');
 const selectAbility = document.getElementById('filter-ability');
-const buttonAlphabetic = document.getElementById('button-alphabetic');
+
 
 //Variables para mostrar secciones//
 const sectionGameBasics = document.getElementById('game-basics');
@@ -93,7 +92,7 @@ const printDataObject = (data) => {
         if (data.hasOwnProperty(key)) {
             const element = data[key];
             newData.push(element);
-                        cards = `<div id="cards-champions" class="card">
+            cards = `<div id="cards-champions" class="card">
                         <div id="card-img" class="card-img"> <p><img src="${element.img}"></p></div> <br>
                         <div id="card-text" class="card-text"> 
                              <p>${element.name}</p> <br>
@@ -105,9 +104,8 @@ const printDataObject = (data) => {
                              <p>Velocidad de Movimiento: ${element.stats.movespeed}</p>
                         </div> 
                         </div>`;
-            root.insertAdjacentHTML('beforeend', cards);
+            root.insertAdjacentHTML('afterbegin', cards);
         }
-
     }
 };
 
@@ -120,7 +118,6 @@ let filter = (ev) => {
 };
 selectRoles.addEventListener('change', filter);
 
-
 //Crear función que  reciba el valor seleccionado y ejecute la funcion que filtra la data por los mejores de cada habilidad e imprima en pantalla los mejores 10//
 let sortAbility = (ev) => {
     const ability = ev.target.value;
@@ -130,7 +127,17 @@ let sortAbility = (ev) => {
     root.innerHTML = '';
     printDataObject(slice);
 };
+
 selectAbility.addEventListener('change', sortAbility);
+
+
+
+// // let filterAbility = (ev) => {
+// //     const ability = ev.target.value;
+// //     const filterAbility = window.dataManager.filterByAbility(newData, ability);
+// //     root.innerHTML = '';
+// //     printDataObject(filterAbility);
+// // };
 
 
 //funcion para filtrar por habilidades (los 10 mejores)

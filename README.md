@@ -15,11 +15,18 @@ A través de las partidas, los jugadores también obtienen recompensas que se ap
 Nos dimos a la tarea de investigar mas acerca de este videojuego en tendencia, ver las modalidades y cómo es que impacta entre la comunidad gamers.
 
 
+
+
+
 ## Research 🕵️
+
 
 En nuestros desing research, nos dimos a la tarea de investigar el perfil de los usuarios de LoL, estadisticas, datos sociodemograficos, asi como comportamientos, necesidades y preferencias que tienen. 
 
 ![research](img/research.jpg)
+
+
+
 
 
 ### Benchmarking 📊
@@ -30,23 +37,54 @@ Las principales aplicaciones utilizadas, se muestran en la siguiente tabla:
 
 
 
+
+
 ### Investigación de Usuario y su comportamiento 🔎
 ![caracteristicas-usuario](img/caracteristicas-usuario.jpg)
 
 
 
 
+
 ### Insights 📢
+
 
 Al entender y detectar a los jugadores de esta plataforma, entendimos que:
 
 •	Presentan problemas al acceder a ciertas aplicaciones.
+
 •	Presentan problemas de conexión en algunos dispositivos.
+
 •	Tanto los usuarios expertos como los iniciadores, necesitan entender y conocer los lineamientos generales.
+
 •	Necesitan conocer cada campeón.
+
 •	Requieren poder identificar los campeones que frecuentemente son utilizados.
-•	Bases de datos de objetos y campeones
+
+•	Bases de datos de objetos y campeones.
+
 •	Interfaz amigable y facil de usar.
+
+
+
+
+
+### User Persona 👥
+
+
+![user-persona](img/userPersona.png)
+
+• Persona entre 24 y 28 años.
+
+• Dedica al menos de 2 a 3 horas al día en jugar videojuegos.
+
+• Usuario e interesado en videojuegos del genero multijugador de arena de batalla en línea.
+
+• Desea encontrar la información y herramientas necesarias para conocer el juego e iniciarse en él.
+
+• Necesita conocer a los personajes, sus características, fortalezas y debilidades para desarrollar estrategias que le permitan permanecer y avanzar en el juego.
+
+
 
 
 
@@ -55,10 +93,16 @@ Al entender y detectar a los jugadores de esta plataforma, entendimos que:
 
 En general, los usuarios presentan las siguientes necesidades:
 
-• Entender el objetivo del juego		
-• Conocer las mecánicas mas básicas
-• Entender conceptos básicos y tips
-• Buscar una forma de mejorar
+• Entender el objetivo del juego.
+
+• Conocer las mecánicas mas básicas.
+
+• Entender conceptos básicos y tips.
+
+• Buscar una forma de mejorar sus jugadas y estrategias.
+
+
+
 
 
 ### Encuesta ❓
@@ -105,11 +149,27 @@ Obtuvimos 34 encuestas contestadas, teniendo los siguientes resultados:
 
 
 
+
+
 ### Primer Sketch ✏️📒
+
 
 Como primer boceto, nos planteamos el siguiente:
 
 ![sketch](img/sketch1.jpg)
+
+
+
+
+
+### Historias de usuario ✍
+
+
+• Presentar una guia de uso sobre esta aplicación.
+• Permitir al usuario conocer los términos generales, vocabulario y reglas básicas del juego.
+• Mostrar la información de los campiones de League of Leyends en orden alfabetico.
+• Permitir al usuario filtar y obtener la información de los campeones de acuerdo a sus roles.
+• Consultar estadisticas 
 
 
 

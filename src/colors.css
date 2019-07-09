@@ -1,69 +1,19 @@
-/* Color Theme Swatches in Hex */
-.Champ-LOL-1-hex { color: #4F528C; }
-.Champ-LOL-2-hex { color: #378C2A; }
-.Champ-LOL-3-hex { color: #315915; }
-.Champ-LOL-4-hex { color: #8C2626; }
-.Champ-LOL-5-hex { color: #0D0D0D; }
+.lol-bg-1 {
+    background-color: #213238;
+}
 
-/* Color Theme Swatches in RGBA */
-.Champ-LOL-1-rgba { color: rgba(79, 82, 140, 1); }
-.Champ-LOL-2-rgba { color: rgba(55, 140, 42, 1); }
-.Champ-LOL-3-rgba { color: rgba(49, 89, 21, 1); }
-.Champ-LOL-4-rgba { color: rgba(140, 38, 38, 1); }
-.Champ-LOL-5-rgba { color: rgba(13, 13, 13, 1); }
+.lol-bg-2 {
+    background-color: #0A1616;
+    background-color: #03080B;
+}
 
-/* Color Theme Swatches in HSLA */
-.Champ-LOL-1-hsla { color: hsla(237, 27, 42, 1); }
-.Champ-LOL-2-hsla { color: hsla(112, 53, 35, 1); }
-.Champ-LOL-3-hsla { color: hsla(95, 61, 21, 1); }
-.Champ-LOL-4-hsla { color: hsla(0, 57, 34, 1); }
-.Champ-LOL-5-hsla { color: hsla(0, 0, 5, 1); }
+.lol-gold-1 {
+    background-color: #CD951A;
+    background-color: #BFA004;
+    background-color: #E4B04C;
+    background-color: #785C20;
+}
 
-/* Color Theme Swatches in Hex */
-.League-of-Legends-700x500-1-hex { color: #3703A6; }
-.League-of-Legends-700x500-2-hex { color: #1D0259; }
-.League-of-Legends-700x500-3-hex { color: #BFA004; }
-.League-of-Legends-700x500-4-hex { color: #D97904; }
-.League-of-Legends-700x500-5-hex { color: #BF0404; }
-
-/* Color Theme Swatches in RGBA */
-.League-of-Legends-700x500-1-rgba { color: rgba(55, 3, 166, 1); }
-.League-of-Legends-700x500-2-rgba { color: rgba(29, 2, 89, 1); }
-.League-of-Legends-700x500-3-rgba { color: rgba(191, 160, 4, 1); }
-.League-of-Legends-700x500-4-rgba { color: rgba(217, 121, 4, 1); }
-.League-of-Legends-700x500-5-rgba { color: rgba(191, 4, 4, 1); }
-
-/* Color Theme Swatches in HSLA */
-.League-of-Legends-700x500-1-hsla { color: hsla(259, 96, 33, 1); }
-.League-of-Legends-700x500-2-hsla { color: hsla(258, 95, 17, 1); }
-.League-of-Legends-700x500-3-hsla { color: hsla(50, 95, 38, 1); }
-.League-of-Legends-700x500-4-hsla { color: hsla(32, 96, 43, 1); }
-.League-of-Legends-700x500-5-hsla { color: hsla(0, 95, 38, 1); } 
-
-/* Color theme image in RGB*/
-.Lol-rgb { color: rgb(54, 2, 89);}
-.Lol-rgb { color: rgb(71, 3, 166);}
-.Lol-rgb { color: rgb(129, 0, 125);}
-.Lol-rgb { color: rgb(55, 100, 140);} 
-.Lol-rgb { color: rgb(20, 89, 37);}
-
-/* Color theme image in HSV*/
-.Lol-hsv { color: hsv(276, 98, 35);}
-.Lol-hsv { color: hsv(265, 98, 65);}
-.Lol-hsv { color: hsv(302, 100, 51);}
-.Lol-hsv { color: hsv(208, 61, 55);}
-.Lol-hsv { color: hsv(135, 78, 35);}
-
-/* Color theme image in CMYK*/
-.Lol-cmyk { color: cmyk(39, 98, 0, 65);}
-.Lol-cmyk { color: cmyk(57, 98, 0, 35);}
-.Lol-cmyk { color: cmyk(0, 100, 3, 49);}
-.Lol-cmyk { color: cmyk(61, 29, 0, 45);}
-.Lol-cmyk { color: cmyk(78, 0, 58, 65);}
-
-/* Color theme image in LAB*/
-.Lol-lab { color: lab(13, 39, -39); }
-.Lol-lab { color: lab(24, 59, -69); }
-.Lol-lab { color: lab(30, 59, -35); }
-.Lol-lab { color: lab(41, -3, -27); }
-.Lol-lab { color: lab(33, -33, 24); }
+.lol-blue-1 {
+    background-color: #054A61;
+}

@@ -72,17 +72,8 @@ Al entender y detectar a los jugadores de esta plataforma, entendimos que:
 ### User Persona 👥
 
 
-![user-persona](img/userPersona.png)
+![user-persona](src/img/userPersona.png)
 
-• Persona entre 24 y 28 años.
-
-• Dedica al menos de 2 a 3 horas al día en jugar videojuegos.
-
-• Usuario e interesado en videojuegos del genero multijugador de arena de batalla en línea.
-
-• Desea encontrar la información y herramientas necesarias para conocer el juego e iniciarse en él.
-
-• Necesita conocer a los personajes, sus características, fortalezas y debilidades para desarrollar estrategias que le permitan permanecer y avanzar en el juego.
 
 
 

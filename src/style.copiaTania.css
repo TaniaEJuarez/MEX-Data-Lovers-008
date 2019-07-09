@@ -83,18 +83,15 @@
  
  .yellow {
      background-color: #BFA004;
-     margin-top: 10px;
-    
  }
  
  .pink {
      background-color: pink;
-     margin-top: 15%;
+     /* margin-top: 1%; */
  }
  
  .orange {
      background-color: orangered;
-     margin-top: 10px;
  }
  
  .white {
@@ -103,7 +100,6 @@
  
  .brown {
      background-color: brown;
-     margin-top: 15px;
  }
  
  .hide {

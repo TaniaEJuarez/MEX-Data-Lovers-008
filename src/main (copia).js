@@ -139,39 +139,6 @@ let sortAbility = (ev) => {
 selectAbility.addEventListener('change', sortAbility);
 
 
-// Función de buscador de coincidencias en la sección de game basics //
-const form = document.querySelector('#form');
-    const buttonSearch = document.querySelector('#buttonSearch');
-    const resultFound= document.querySelector('#resultFound')   
-
-    const find = ()=>{
-        //console.log(fomulario.value);
-        resultFound.innerHTML = '';
-
-        const search =form.value.toLowerCase();
-
-        for(let glosary of glosarys){
-            let word = glosary.word.toLowerCase();
-            if(word.indexOf(search) !== -1){
-                resultFound.innerHTML += `
-                <li>${glosary.word}</li>
-                `
-            }
-        }
-        
-        if(resultFound.innerHTML === ''){
-            resultFound.innerHTML += `
-            <li>Sin coincidencia ...</li>
-            `
-        }
-
-    }
-
-    buttonSearch.addEventListener('click', find)
-    form.addEventListener('keyup', find)
-    
-    find();
-
 
 // // let filterAbility = (ev) => {
 // //     const ability = ev.target.value;

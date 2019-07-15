@@ -165,14 +165,16 @@ const form = document.querySelector('#form');
             `
         }
 
-    }
+    };
 
     buttonSearch.addEventListener('click', find)
     form.addEventListener('keyup', find)
     
     find();
 
-
+    
+    // activa el boton average //
+    average.addEventListener('click', window.dataManager.averageByADamage)
 // // let filterAbility = (ev) => {
 // //     const ability = ev.target.value;
 // //     const filterAbility = window.dataManager.filterByAbility(newData, ability);

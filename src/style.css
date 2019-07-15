@@ -429,39 +429,41 @@ a {
 
 /*
 estilo sección game-basics
-
+*/
 .content-basics
 h1 {
-    font-size: 200px;
-    color: #785C20;
-    font-size: 25px;
+    font-size: 33px;
+    color: #BFA004;
     font-weight: bold;
     text-decoration: underline;
-    text-shadow: 2px 1px orange;
+    text-shadow: 2px 1px #785C20;
     word-spacing: 5px;
 }
 
 .resultFound {
-    font-size: 40px;
-    color: #785C20;
-    font-size: 25px;
+    font-size: 23px;
+    color: #CD951A;
     text-align: justify;
+    list-style-image: url('emoji emoji2694')
 }
 
-ul {
-    list-style-image: url('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/crossed-swords_2694.png');
-  }
-
   ul li {
-    background: #cce5ff;
+    background: #054A61;
     margin: 10px;
   }
 
-.btn-info mb-6
-@webkit-keyframes example {
-    0%   {background-color: #CD951A;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #ccc;     
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
   }
-  */
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
